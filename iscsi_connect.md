@@ -62,3 +62,15 @@ zypper install open-iscsi
 /dev/sdc1    50G         1,9G   49G            4% /mnt/iscsi-mpoint
 ```
 
+## disable or delete an iSCSI target.
+
+1. isable an iSCSI target:
+```
+# iscsiadm --m node -T <iqn.TARGET_NAME> --portal <ISCSI_SERVER_IP>:3260 -u
+```
+
+2. Delete the target’s record ID
+```
+# iscsiadm -m node -o delete -T <iqn.TARGET_NAME> --portal <ISCSI_SERVER_IP>:3260
+```
+3. stop the iSCSI service.
