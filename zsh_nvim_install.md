@@ -96,6 +96,9 @@ dnf install neovim
 
 ## Install NerdFont
 https://github.com/ryanoasis/nerd-fonts
+ansible in neovim https://github.com/pearofducks/ansible-vim
+Install nodejs (Nvchad dependency)
+Install ripgrep (Nvchad dependency)
 
 ## NvChad
 [NvChad install doc](https://nvchad.com/docs/quickstart/install)
